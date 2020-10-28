@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="Cover.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="index.js" defer></script>
 </head>
-<body>
+<body class="bg-primary">
    
         <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="margin-bottom: 0% ;">
                 <a class="navbar-brand" href="index.html">Random Api's</a>
@@ -21,64 +21,73 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link active" href="weather.html">Weather <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="Triva.html">Trivia</a>
-                    <a class="nav-link" href="Chuck.html">Chuck Norris</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link active" href="weather.html">Weather Api<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Triva.html">Trivia Api</a>
+                    <a class="nav-link" href="Chuck.html">Chuck Api</a>
+                    <a class="nav-link" href="Greetings.html">Hello api</a>
                 </div>
                 </div>
               </nav>
 
     <!-- The hr is a divider where it divides the search bar from the content -->
+     <h1 class="text-center">Welcome to the Wather api</h1>
+    <h3 class="text-center">Search a cities name and get the weather.</h3>
     <hr class="featurette-divider">
+   
     <!-- This is a card where it will contain all the infomation of the top players in the region-->
-    <div class="container">
-        <div class="card-deck ">
-            <div id="Box" class="card">
+    <div class="container text-center">
+        <div class="card-deck bg-primary">
+            <div id="Box" class="card bg-light">
                 <div class="container-sm">
                    
                 </div>
-                <div class="card-body text-dark"  >
+                <div class="card-body text-dark "  >
                      <!-- This is the search bar where you search the region you are looking for -->
-    <div class="container">
+    <div class="container text-center ">
         <div id="search">
+            <h3>
             <input type="text" placeholder="City name" id="inputValue">
-            <button id="get-btn" class="btn-primary">Get Data</button>
-        </div>
-    </div>
+            <button id="get-btn" class="btn-primary">Get Weather</button>
+       </h3> </div>
+    
     <div>
         <br>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm"><p>Temperature
 <input type="text" readonly id="temp" placeholder="Temperature">
+</p>
             </div>
         </div>
         <br>
         <div class="row">
-                <div class="col-sm">
+                <div class="col-sm "><p> Feels Like
                    <input type="text" readonly id="feel" placeholder="feels like"> 
+                </p>
                 </div>
             </div>
             <br>
             <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm"><p> Max-Temperature
                         <input type="text" readonly id="max" placeholder="max-temp">
-                    </div>
+                    </p>
+                </div>
                 </div>
                 <br>
                 <div class="row">
-                        <div class="col-sm">
+                        <div class="col-sm"><p>Min-Temperature
                             <input type="text" readonly id="min" placeholder="min-temp"></input>
-                        </div>
+                        </p>
+                    </div>
                     </div>
                     <br>
                     <div class="row">
-                            <div class="col-sm">
+                            <div class="col-sm"><p>Humidity
                                  <input type="text" readonly id="hum" placeholder="Humitidy"></input>
-                            </div>
+                           </p> 
+                        </div>
                         </div>
         
-        
+        </div>
         
        
 
