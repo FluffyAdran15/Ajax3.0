@@ -1,3 +1,4 @@
+///////////First Api/////
 ////////////////Use Dom to select get and post button/////////////
 const getBtn = document.getElementById('get-btn');
 const postBtn = document.getElementById('post-btn');
@@ -5,7 +6,7 @@ const postBtn = document.getElementById('post-btn');
 const getData = () =>{
     var answer = document.getElementsByClassName('inputValue').value;
     console.log(answer);
-    var tops = "https://api.chucknorris.io/jokes/random"
+    var tops = "https://fourtonfish.com/hellosalut/?mode=auto";
 
     sendHttprequest('GET', tops);
 };
@@ -19,7 +20,7 @@ const sendHttprequest = (method,url) =>{
 ///////////// When browser load parse http req to usable format//////////
             const data = JSON.parse(xhr.response);
             console.log(data);
-            document.getElementById('chang').innerHTML = data.value;
+            document.getElementById('change').innerHTML = data.hello;
             
  
 }
