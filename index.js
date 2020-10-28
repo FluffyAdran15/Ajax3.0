@@ -1,6 +1,8 @@
 ////////////////Use Dom to select get and post button/////////////
 const getBtn = document.getElementById('get-btn');
 const postBtn = document.getElementById('post-btn');
+
+
 ///////create callback function thats used when button clicked////////
 const getData = () =>{
     var answer = document.getElementById('inputValue').value;
@@ -18,8 +20,12 @@ const sendHttprequest = (method,url) =>{
 ///////////// When browser load parse http req to usable format//////////
             const data = JSON.parse(xhr.response);
             console.log(data);
-
-            
+        document.getElementById('temp').value = data.main.temp + " Degrees";
+        document.getElementById('feel').value = data.main.feels_like + " Feels like";
+        document.getElementById('max').value = data.main.temp_max + " Temp Max";
+        document.getElementById('min').value = data.main.temp_min + " Temp Min";
+        document.getElementById('hum').value = data.main.humidity + " humidity";
+ 
  
 }
     xhr.send();

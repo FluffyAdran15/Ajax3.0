@@ -14,6 +14,21 @@
 </head>
 <body>
    
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark" style="margin-bottom: 0% ;">
+                <a class="navbar-brand" href="index.html">Random Api's</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="weather.html">Weather <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Triva.html">Trivia</a>
+                    <a class="nav-link" href="Chuck.html">Chuck Norris</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </div>
+                </div>
+              </nav>
+
     <!-- The hr is a divider where it divides the search bar from the content -->
     <hr class="featurette-divider">
     <!-- This is a card where it will contain all the infomation of the top players in the region-->
@@ -26,15 +41,48 @@
                 <div class="card-body text-dark"  >
                      <!-- This is the search bar where you search the region you are looking for -->
     <div class="container">
-            <form class="form-center text-center">
-                <input class="form-control mr-sm-2 text-center" type="search" placeholder="Champion" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 bg-dark text-light" type="submit">Search</button>
-            </form>
-          </div>
-                
-                </div>
+        <div id="search">
+            <input type="text" placeholder="City name" id="inputValue">
+            <button id="get-btn" class="btn-primary">Get Data</button>
+        </div>
+    </div>
+    <div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+<input type="text" readonly id="temp" placeholder="Temperature">
             </div>
         </div>
+        <br>
+        <div class="row">
+                <div class="col-sm">
+                   <input type="text" readonly id="feel" placeholder="feels like"> 
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                    <div class="col-sm">
+                        <input type="text" readonly id="max" placeholder="max-temp">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                        <div class="col-sm">
+                            <input type="text" readonly id="min" placeholder="min-temp"></input>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <div class="col-sm">
+                                 <input type="text" readonly id="hum" placeholder="Humitidy"></input>
+                            </div>
+                        </div>
+        
+        
+        
+       
+
+       </div>   
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
